@@ -1,4 +1,4 @@
-module github.com/gofiber/swagger
+module github.com/zackyymughnii/swagger-fiber
 
 go 1.16
 
