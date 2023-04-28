@@ -179,6 +179,9 @@ type Config struct {
 	// Applies custom CSS styles.
 	// default: ""
 	CustomStyle template.CSS `json:"-"`
+
+	// Applied redocly templating
+	UseRedoc bool `json:"-"`
 }
 
 type FilterConfig struct {

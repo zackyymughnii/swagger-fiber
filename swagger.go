@@ -26,7 +26,13 @@ var HandlerDefault = New()
 func New(config ...Config) fiber.Handler {
 	cfg := configDefault(config...)
 
-	index, err := template.New("swagger_index.html").Parse(indexTmpl)
+	// added redoc template
+	var tmpl = indexTmpl
+	if cfg.UseRedoc {
+		tmpl = redoclyTmpl
+	}
+
+	index, err := template.New("swagger_index.html").Parse(tmpl)
 	if err != nil {
 		panic(fmt.Errorf("fiber: swagger middleware error -> %w", err))
 	}

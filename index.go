@@ -1,6 +1,6 @@
 package swagger
 
-const indexTmplBackup string = `
+const indexTmpl string = `
 <!-- HTML for static distribution bundle build -->
 <!DOCTYPE html>
 <html lang="en">
@@ -100,7 +100,7 @@ const indexTmplBackup string = `
 </html>
 `
 
-const indexTmpl string = `
+const redoclyTmpl string = `
 <!DOCTYPE html>
 <html>
   <head>
@@ -125,5 +125,4 @@ const indexTmpl string = `
     <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"> </script>
   </body>
 </html>
-
 `
